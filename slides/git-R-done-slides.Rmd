@@ -1,10 +1,10 @@
 ---
-title: "Learn Git!"
+title: "Git R Done!"
 author: "Jeff Yeazell, P.E."
 date: "8/2/2019"
 output: 
   ioslides_presentation:
-    css: shiny-slides.css
+    css: my-style.css
     logo: images/Git-Icon-1788C.png
     self_contained: no
     incremental: false
@@ -32,30 +32,28 @@ output:
 
 # Basic Workflow
 
-## 1. What are Version Control Systems?
+## What Is A Version Control System (VCS)?
 
-A Version Control System (VCS) is a tool that manages changes made to files and directories in a project
-
+* Tool that manages changes made to files and directories in a project
 * Git is a VCS
 * Nothing that is saved to Git is ever lost
 * Git automatically notifies you when your work conflicts with someone else's
     + Harder to accidentally overwrite someone else's work
 * Git provides the ability to synchronize work done by different people on different PCs
 
-## 2. Where Does Git Store Information?
+## Where Does Git Store Information?
 
 * A Git Project has two parts:
-
-    1. Files and directories you create and edit directly
-    2. The extra info that Git records about the project history
+    * Files and directories you create and edit directly
+    * The extra info that Git records about the project history
 * Combined, these two parts make up a __repository__ (repo)
 * Git stores its info in the `.git` directory at the root directory of project
 * NEVER EDIT OR DELETE THIS DIRECTORY OR ITS CONTENTS!
 
-## 3. Checking The State of a Git Repo
+## Checking The State of a Git Repo
 
 Dummy text
 
-## 4. Viewing What You've Changed
+## Viewing What You've Changed
 
 Dummy text
