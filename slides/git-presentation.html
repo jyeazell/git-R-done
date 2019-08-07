@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Learn Git!</title>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="generator" content="pandoc" />
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <base target="_blank">
+
+  <script type="text/javascript">
+    var SLIDE_CONFIG = {
+      // Slide settings
+      settings: {
+                title: 'Learn Git!',
+                        useBuilds: true,
+        usePrettify: true,
+        enableSlideAreas: true,
+        enableTouch: true,
+                        favIcon: 'git-presentation_files/logo.png',
+              },
+
+      // Author information
+      presenters: [
+            {
+        name:  'Jeff Yeazell, P.E.' ,
+        company: '',
+        gplus: '',
+        twitter: '',
+        www: '',
+        github: ''
+      },
+            ]
+    };
+  </script>
+
+  <link href="git-presentation_files/ioslides-13.5.1/fonts/fonts.css" rel="stylesheet" />
+  <link href="git-presentation_files/ioslides-13.5.1/theme/css/default.css" rel="stylesheet" />
+  <link href="git-presentation_files/ioslides-13.5.1/theme/css/phone.css" rel="stylesheet" />
+  <script src="git-presentation_files/ioslides-13.5.1/js/modernizr.custom.45394.js"></script>
+  <script src="git-presentation_files/ioslides-13.5.1/js/prettify/prettify.js"></script>
+  <script src="git-presentation_files/ioslides-13.5.1/js/prettify/lang-r.js"></script>
+  <script src="git-presentation_files/ioslides-13.5.1/js/prettify/lang-yaml.js"></script>
+  <script src="git-presentation_files/ioslides-13.5.1/js/hammer.js"></script>
+  <script src="git-presentation_files/ioslides-13.5.1/js/slide-controller.js"></script>
+  <script src="git-presentation_files/ioslides-13.5.1/js/slide-deck.js"></script>
+
+  <style type="text/css">
+
+    b, strong {
+      font-weight: bold;
+    }
+
+    em {
+      font-style: italic;
+    }
+
+    summary {
+      display: list-item;
+    }
+
+    slides > slide {
+      -webkit-transition: all 0.4s ease-in-out;
+      -moz-transition: all 0.4s ease-in-out;
+      -o-transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .auto-fadein {
+      -webkit-transition: opacity 0.6s ease-in;
+      -webkit-transition-delay: 0.4s;
+      -moz-transition: opacity 0.6s ease-in 0.4s;
+      -o-transition: opacity 0.6s ease-in 0.4s;
+      transition: opacity 0.6s ease-in 0.4s;
+      opacity: 0;
+    }
+/* https://github.com/ropensci/plotly/pull/524#issuecomment-468142578 */
+slide:not(.current) .plotly.html-widget{
+  display: block;
+}
+
+    slides > slide:not(.nobackground):before {
+      font-size: 12pt;
+      content: "";
+      position: absolute;
+      bottom: 20px;
+      left: 60px;
+      background: url(git-presentation_files/logo.png) no-repeat 0 50%;
+      -webkit-background-size: 30px 30px;
+      -moz-background-size: 30px 30px;
+      -o-background-size: 30px 30px;
+      background-size: 30px 30px;
+      padding-left: 40px;
+      height: 30px;
+      line-height: 1.9;
+    }
+  </style>
+
+  <link rel="stylesheet" href="shiny-slides.css" type="text/css" />
+
+</head>
+
+<body style="opacity: 0">
+
+<slides>
+
+  <slide class="title-slide segue nobackground">
+        <aside class="gdbar"><img src="git-presentation_files/logo.png"></aside>
+        <!-- The content of this hgroup is replaced programmatically through the slide_config.json. -->
+    <hgroup class="auto-fadein">
+      <h1 data-config-title><!-- populated from slide_config.json --></h1>
+      <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
+      <p data-config-presenter><!-- populated from slide_config.json --></p>
+            <p style="margin-top: 6px; margin-left: -2px;">8/2/2019</p>
+          </hgroup>
+  </slide>
+
+<slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>Overview</h2></hgroup><article  id="overview">
+
+</article></slide><slide class=""><hgroup><h2>Goals</h2></hgroup><article  id="goals">
+
+<h3>You will learn:</h3>
+
+<ul>
+<li>Tools for finding bugs &amp; diagnosing errors in Shiny applications</li>
+<li>Little-known ways to look under the covers</li>
+<li>How to debug problems in deployed apps</li>
+<li>Cheat code for IDE JavaScript debug tools</li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>Outline</h2></hgroup><article  id="outline">
+
+<h3>We’ll cover four main areas:</h3>
+
+<ul>
+<li>Basic Workflow</li>
+<li>Repositories</li>
+<li>Undo</li>
+<li>Working With Branches</li>
+</ul>
+
+</article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>Basic Workflow</h2></hgroup><article  id="basic-workflow">
+
+</article></slide><slide class=""><hgroup><h2>1. What are Version Control Systems?</h2></hgroup><article  id="what-are-version-control-systems">
+
+<p>A Version Control System (VCS) is a tool that manages changes made to files and directories in a project</p>
+
+<ul>
+<li>Git is a VCS</li>
+<li>Nothing that is saved to Git is ever lost</li>
+<li>Git automatically notifies you when your work conflicts with someone else’s
+
+<ul>
+<li>Harder to accidentally overwrite someone else’s work</li>
+</ul></li>
+<li>Git provides the ability to synchronize work done by different people on different PCs</li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>2. Where Does Git Store Information?</h2></hgroup><article  id="where-does-git-store-information">
+
+<ul>
+<li><p>A Git Project has two parts:</p>
+
+<ol>
+<li>Files and directories you create and edit directly</li>
+<li>The extra info that Git records about the project history</li>
+</ol></li>
+<li>Combined, these two parts make up a <strong>repository</strong> (repo)</li>
+<li>Git stores its info in the <code>.git</code> directory at the root directory of project</li>
+<li><p>NEVER EDIT OR DELETE THIS DIRECTORY OR ITS CONTENTS!</p></li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>3. Checking The State of a Git Repository</h2></hgroup><article  id="checking-the-state-of-a-git-repository">
+
+<p>Dummy text</p>
+
+</article></slide><slide class=""><hgroup><h2>4. Viewing What You’ve Changed</h2></hgroup><article  id="viewing-what-youve-changed">
+
+<p>Dummy text</p></article></slide>
+
+
+  <slide class="backdrop"></slide>
+
+</slides>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+<!-- map slide visiblity events into shiny -->
+<script>
+  (function() {
+    if (window.jQuery) {
+       window.jQuery(document).on('slideleave', function(e) {
+         window.jQuery(e.target).trigger('hidden');
+      });
+       window.jQuery(document).on('slideenter', function(e) {
+         window.jQuery(e.target).trigger('shown');
+      });
+    }
+  })();
+</script>
+
+</body>
+</html>
