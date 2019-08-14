@@ -129,15 +129,67 @@ slide:not(.current) .plotly.html-widget{
 <h3>You will learn:</h3>
 
 <ul>
-<li>Tools for finding bugs &amp; diagnosing errors in Shiny applications</li>
+<li>How to initialize and</li>
 <li>Little-known ways to look under the covers</li>
 <li>How to debug problems in deployed apps</li>
 <li>Cheat code for IDE JavaScript debug tools</li>
 </ul>
 
+</article></slide><slide class=""><hgroup><h2>Prerequisites</h2></hgroup><article  id="prerequisites">
+
+<ul>
+<li>Software
+
+<ul>
+<li>Git (<a href='https:///git-scm.com' title=''>https:///git-scm.com</a>)</li>
+<li>R (<a href='https://cran.r-project.org/' title=''>https://cran.r-project.org/</a>)</li>
+<li>RStudio (<a href='https://www.rstudio.com/' title=''>https://www.rstudio.com/</a>)</li>
+</ul></li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>Prerequisites</h2></hgroup><article  id="prerequisites-1">
+
+<ul>
+<li>Web-based Repository Hosting Service Account
+
+<ul>
+<li>GitHub (<a href='https://github.com' title=''>https://github.com</a>)
+
+<ul>
+<li>Free, no private repos</li>
+<li>$7/month:
+
+<ul>
+<li>Unlimited private repos</li>
+<li>Unlimited contributers to private repos</li>
+</ul></li>
+</ul></li>
+<li>BitBucket (<a href='https://bitbucket.org' title=''>https://bitbucket.org</a>)
+
+<ul>
+<li>Free, unlimited private repos
+
+<ul>
+<li>Private repos limited to 5 contributors</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>Resources</h2></hgroup><article  id="resources">
+
+<ul>
+<li>Great online manual: <a href='https://git-scm.com/book/en/v2' title=''>https://git-scm.com/book/en/v2</a>
+
+<ul>
+<li>Also available as ebook (pdf, epub, mobi)</li>
+</ul></li>
+<li>Cheat Sheet: <a href='http://bit.ly/304I8b0' title=''>http://bit.ly/304I8b0</a></li>
+</ul>
+
 </article></slide><slide class=""><hgroup><h2>Outline</h2></hgroup><article  id="outline">
 
-<h3>We’ll cover four main areas:</h3>
+</article></slide><slide class=""><hgroup><h2>We’ll cover four main areas:</h2></hgroup><article  id="well-cover-four-main-areas">
 
 <ul>
 <li>Basic Workflow</li>
@@ -152,7 +204,7 @@ slide:not(.current) .plotly.html-widget{
 
 <ul>
 <li>Tool that manages changes made to files and directories in a project</li>
-<li>Git is a VCS</li>
+<li>Git is a Distributed VCS</li>
 <li>Nothing that is saved to Git is ever lost</li>
 <li>Git automatically notifies you when your work conflicts with someone else’s
 
@@ -176,9 +228,41 @@ slide:not(.current) .plotly.html-widget{
 <li>NEVER EDIT OR DELETE THIS DIRECTORY OR ITS CONTENTS!</li>
 </ul>
 
+</article></slide><slide class=""><hgroup><h2>Generalized Workflow Diagram</h2></hgroup><article  id="generalized-workflow-diagram">
+
+<img src='images/02_basic_workflow.png' title=''/>
+
+</article></slide><slide class=""><hgroup><h2>Issuing Git Commands</h2></hgroup><article  id="issuing-git-commands">
+
+<ul>
+<li>Easiest: Use Terminal pane in RStudio
+
+<ul>
+<li>Configurable in RStudio to use:
+
+<ul>
+<li>Git Bash (installed with Git)</li>
+<li>Command Prompt (Windows)</li>
+<li>Windows PowerShell (Windows)</li>
+<li>bash, zsh, etc. (Mac/Unix/Linux)</li>
+</ul></li>
+<li>Tools/Global Options/Terminal</li>
+</ul></li>
+<li>All commands issued to Git wil start with <code>git</code></li>
+</ul>
+
 </article></slide><slide class=""><hgroup><h2>Checking The State of a Git Repo</h2></hgroup><article  id="checking-the-state-of-a-git-repo">
 
-<p>Dummy text</p>
+<div class="columns-2">
+<img src='images/01_git_status.png' title=''/>
+
+<ul>
+<li><code>git status</code>
+
+<ul>
+<li>Displays list of files that have been modified since the last changes were made</li>
+</ul></li>
+</ul></div>
 
 </article></slide><slide class=""><hgroup><h2>Viewing What You’ve Changed</h2></hgroup><article  id="viewing-what-youve-changed">
 

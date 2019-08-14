@@ -15,15 +15,37 @@ output:
 ## Goals 
 
 ### You will learn:
-
-- Tools for finding bugs & diagnosing errors in Shiny applications
+- How to initialize and 
 - Little-known ways to look under the covers 
 - How to debug problems in deployed apps
 - Cheat code for IDE JavaScript debug tools
 
+## Prerequisites
+- Software
+  - Git  (https:///git-scm.com)
+  - R  (https://cran.r-project.org/)
+  - RStudio (https://www.rstudio.com/)
+  
+  
+## Prerequisites
+- Web-based Repository Hosting Service Account
+  - GitHub (https://github.com)
+    - Free, no private repos
+    - $7/month:
+      - Unlimited private repos
+      - Unlimited contributers to private repos
+  - BitBucket (https://bitbucket.org)
+    - Free, unlimited private repos
+      - Private repos limited to 5 contributors
+
+## Resources
+- Great online manual: https://git-scm.com/book/en/v2
+  - Also available as ebook (pdf, epub, mobi)
+- Cheat Sheet: http://bit.ly/304I8b0
+
 ## Outline
 
-### We'll cover four main areas:
+## We'll cover four main areas:
 
 - Basic Workflow
 - Repositories 
@@ -33,26 +55,47 @@ output:
 # Basic Workflow
 
 ## What Is A Version Control System (VCS)?
-
-* Tool that manages changes made to files and directories in a project
-* Git is a VCS
-* Nothing that is saved to Git is ever lost
-* Git automatically notifies you when your work conflicts with someone else's
-    + Harder to accidentally overwrite someone else's work
-* Git provides the ability to synchronize work done by different people on different PCs
+- Tool that manages changes made to files and directories in a project
+- Git is a Distributed VCS
+- Nothing that is saved to Git is ever lost
+- Git automatically notifies you when your work conflicts with someone else's
+  - Harder to accidentally overwrite someone else's work
+- Git provides the ability to synchronize work done by different people on different PCs
 
 ## Where Does Git Store Information?
+- A Git Project has two parts:
+    - Files and directories you create and edit directly
+    - The extra info that Git records about the project history
+- Combined, these two parts make up a __repository__ (repo)
+- Git stores its info in the `.git` directory at the root directory of project
+- NEVER EDIT OR DELETE THIS DIRECTORY OR ITS CONTENTS!
 
-* A Git Project has two parts:
-    * Files and directories you create and edit directly
-    * The extra info that Git records about the project history
-* Combined, these two parts make up a __repository__ (repo)
-* Git stores its info in the `.git` directory at the root directory of project
-* NEVER EDIT OR DELETE THIS DIRECTORY OR ITS CONTENTS!
+## General Workflow Diagram
+![](images/02_basic_workflow.png)
+
+
+## Issuing Git Commands
+
+- Easiest: Use Terminal pane in RStudio
+  - Configurable in RStudio to use:
+    - Git Bash (installed with Git)
+    - Command Prompt (Windows)
+    - Windows PowerShell (Windows)
+    - bash, zsh, etc. (Mac/Unix/Linux)
+  - Tools/Global Options/Terminal
+- All commands issued to Git wil start with `git`
+  
 
 ## Checking The State of a Git Repo
+<div class="columns-2">
+![](images/01_git_status.png)
 
-Dummy text
+
+
+
+- `git status`
+  - Displays list of files that have been modified since the last changes were made
+</div>
 
 ## Viewing What You've Changed
 
