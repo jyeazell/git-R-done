@@ -20,14 +20,16 @@ output:
 - How to debug problems in deployed apps
 - Cheat code for IDE JavaScript debug tools
 
-## Prerequisites
-- Software
+## Software Requirements
+- Required:
   - Git  (https:///git-scm.com)
   - R  (https://cran.r-project.org/)
   - RStudio (https://www.rstudio.com/)
-  
-  
-## Prerequisites
+- Optional:
+  - GitHub Desktop (https://desktop.github.com)
+  - Sourcetree (https://www.sourcetreeapp.com)
+ 
+## Hosting Services
 - Web-based Repository Hosting Service Account
   - GitHub (https://github.com)
     - Free, no private repos
@@ -39,11 +41,11 @@ output:
       - Private repos limited to 5 contributors
 
 ## Resources
-- Great online manual: https://git-scm.com/book/en/v2
+- Pro Git is a great online manual: https://git-scm.com/book/en/v2
   - Also available as ebook (pdf, epub, mobi)
 - Cheat Sheet: http://bit.ly/304I8b0
 
-## Outline
+# Outline
 
 ## We'll cover four main areas:
 
@@ -71,8 +73,7 @@ output:
 - NEVER EDIT OR DELETE THIS DIRECTORY OR ITS CONTENTS!
 
 ## General Workflow Diagram
-![](images/02_basic_workflow.png)
-
+![](images/basic_workflow.png)
 
 ## Issuing Git Commands
 
