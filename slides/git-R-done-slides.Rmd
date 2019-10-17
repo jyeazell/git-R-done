@@ -15,15 +15,15 @@ output:
 ## Goals 
 
 ### You will learn:
-- How to initialize and 
-- Little-known ways to look under the covers 
-- How to debug problems in deployed apps
-- Cheat code for IDE JavaScript debug tools
+- The most Common `git` commands 
+- How too create a new GitHub repository 
+- How to `clone` and `fork` repositories
+- Basic collaboration workflows
 
 ## Software Requirements
-- Required:
-  - Git  (https:///git-scm.com)
-  - R  (https://cran.r-project.org/)
+- Required (all available in Software Center):
+  - Git (https:///git-scm.com)
+  - R (https://cran.r-project.org/)
   - RStudio (https://www.rstudio.com/)
 - Optional:
   - GitHub Desktop (https://desktop.github.com)
@@ -41,8 +41,9 @@ output:
       - Private repos limited to 5 contributors
 
 ## Resources
-- Pro Git is a great online manual: https://git-scm.com/book/en/v2
-  - Also available as ebook (pdf, epub, mobi)
+- Pro Git is a great online manual:
+  - https://git-scm.com/book/en/v2
+- Also available as ebook (pdf, epub, mobi)
 - Cheat Sheet: http://bit.ly/304I8b0
 
 # Outline
@@ -85,18 +86,23 @@ output:
     - bash, zsh, etc. (Mac/Unix/Linux)
   - Tools/Global Options/Terminal
 - All commands issued to Git wil start with `git`
+
+
+<div class="notes">
+This is my *note*.
+
+- It can contain markdown
+- like this list
+
+</div>
   
 
 ## Checking The State of a Git Repo
-<div class="columns-2">
-![](images/01_git_status.png)
-
-
-
-
 - `git status`
   - Displays list of files that have been modified since the last changes were made
-</div>
+  
+![](images/01_git_status.png)
+
 
 ## Viewing What You've Changed
 
